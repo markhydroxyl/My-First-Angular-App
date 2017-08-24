@@ -1,3 +1,4 @@
+<app-appheader></app-appheader>
 <div class="container">
   <app-cockpit
     (serverCreated)="onServerAdded($event)"
@@ -6,8 +7,8 @@
   <hr>
   <div class="row">
     <div class="col-xs-12">
-      <button class="btn btn-primary" (click)="onChangeFirst()">Change first Element</button>
-      <button class="btn btn-danger" (click)="onDestroyFirst()">Destroy first Component</button>
+      <button class="btn btn-primary" (click)="onChangeFirst()">Change first match</button>
+      <button class="btn btn-danger" (click)="onDestroyFirst()">Destroy first match</button>
       <app-server-element
         *ngFor="let serverElement of serverElements"
         [srvElement]="serverElement"
